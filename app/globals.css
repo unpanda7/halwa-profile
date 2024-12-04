@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+.nav-link {
+  @apply hover:underline underline-offset-4;
+}
+
+.social-icon {
+  @apply w-6 h-6 transition-transform hover:scale-110;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r;
+}
+
+.gradient-1 {
+  @apply gradient-text from-blue-600 via-purple-500 to-pink-500;
+}
+
+.gradient-2 {
+  @apply gradient-text from-emerald-500 via-indigo-500 to-purple-500;
+}
