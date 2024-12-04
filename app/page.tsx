@@ -83,12 +83,12 @@ export default function Home() {
           variants={containerVariants}
         >
           <motion.div variants={itemVariants}>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              <div className="gradient-1">
+            <h1 className=" font-bold leading-tight">
+              <div className="text-xl md:text-4xl gradient-1">
                 {t.name}
               </div>
-              <div className="gradient-2 mt-2">
-              <TypeAnimation  className="leading-normal py-1"  sequence={[t.nameValue, 1000, t.preJob, 1000, t.job]} speed={50} wrapper='div' repeat={Infinity} />
+              <div className="text-4xl md:text-6xl gradient-2 mt-2">
+              <TypeAnimation key={language} className="leading-normal py-1"  sequence={[t.nameValue, 1000, t.preJob, 1000, t.job]} speed={50} wrapper='div' repeat={Infinity} />
               </div>
             </h1>
           </motion.div>
